@@ -1,14 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <title>Article 03</title>
   </head>
   <body>
     <main>
-      <img src="#" alt="#" />
-      <h1></h1>
-      <p></p>
+      <img src="{% static 'images/image-omelette.jpeg' %}" alt="omelette" />
+      <h1>Simple Omelette Recipe</h1>
+      <p>
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
 
       <div class="time-container">
         <h3>Preparation time</h3>
