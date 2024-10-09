@@ -23,7 +23,7 @@ STYLE GUIDE :
 body {
   font-family: "Outfit", sans-serif;
   font-size: 16px;
-  color: hsl(30, 5%, 15%);
+  color: hsl(24, 5%, 18%);
   background-color: hsl(30, 54%, 90%);
 }
 
@@ -54,7 +54,6 @@ main {
 
 ul li::before {
   content: "•";
-  color: hsl(30, 10%, 34%);
   display: inline-block;
   width: 1em;
   font-size: 1.5rem;
@@ -123,4 +122,39 @@ img {
 .instructions-container ol li::marker {
   color: hsl(14, 45%, 36%);
   font-weight: 700;
+}
+
+/* NUTRITION CONTAINER */
+
+.nutrition-container .nutrition-container__description {
+  margin: 2rem 0;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid hsl(14, 45%, 36%);
+  padding: 1rem 0;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-left,
+.table-right {
+  flex: 1;
+}
+
+.table-left {
+  margin-left: 2rem;
+}
+
+.table-right {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
 }
