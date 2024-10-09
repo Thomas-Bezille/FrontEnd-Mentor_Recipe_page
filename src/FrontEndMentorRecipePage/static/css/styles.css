@@ -1,0 +1,168 @@
+/*
+STYLE GUIDE :
+  Colors:
+    White: hsl(0, 0%, 100%)
+    Stone 100: hsl(30, 54%, 90%)
+    Stone 150: hsl(30, 18%, 87%)
+    Stone 600: hsl(30, 10%, 34%)
+    Stone 900: hsl(24, 5%, 18%)
+    Brown 800: hsl(14, 45%, 36%)
+    Rose 800: hsl(332, 51%, 32%)
+    Rose 50: hsl(330, 100%, 98%)
+
+  Typography:
+    Font size: 16px
+    font-family: "Young Serif", serif;
+    Font weight: 400
+    font-family: "Outfit", sans-serif;
+    Font weight: 400, 600, 700
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(24, 5%, 18%);
+  background-color: hsl(30, 54%, 90%);
+  line-height: 1.4rem;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+}
+
+h1 {
+  line-height: 3rem;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+
+main {
+  width: 50%;
+  margin: 5rem auto;
+  padding: 4rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+}
+
+ul li::before {
+  content: "•";
+  display: inline-block;
+  width: 1em;
+  font-size: 1.5rem;
+}
+
+ul li span,
+ol li span {
+  font-weight: 700;
+}
+
+/* IMAGE */
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+
+/* TIME CONTAINER */
+
+.time-container {
+  background-color: hsl(330, 100%, 98%);
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.time-container h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.time-container li {
+  margin-bottom: 0.5rem;
+}
+
+.time-container ul li::before {
+  color: hsl(332, 51%, 32%);
+}
+
+/* INGREDIENTS CONTAINER */
+
+.ingredients-container ul li {
+  margin-bottom: 0.5rem;
+}
+
+.ingredients-container ul li::before {
+  color: hsl(14, 45%, 36%);
+}
+
+/* INSTRUCTIONS CONTAINER */
+
+.instructions-container ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+
+.instructions-container ol li {
+  margin-bottom: 0.5rem;
+}
+
+.instructions-container ol li span,
+.instructions-container ol li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.instructions-container ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/* NUTRITION CONTAINER */
+
+.nutrition-container .nutrition-container__description {
+  margin: 2rem 0;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid hsl(14, 45%, 36%);
+  padding: 1rem 0;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-left,
+.table-right {
+  flex: 1;
+}
+
+.table-left {
+  margin-left: 2rem;
+}
+
+.table-right {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}

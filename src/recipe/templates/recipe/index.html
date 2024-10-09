@@ -1,14 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/media.css' %}" />
     <title>Article 03</title>
   </head>
   <body>
     <main>
-      <img src="#" alt="#" />
-      <h1></h1>
-      <p></p>
+      <img src="{% static 'images/image-omelette.jpeg' %}" alt="omelette" />
+      <h1>Simple Omelette Recipe</h1>
+      <p class="main-description">
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
 
       <div class="time-container">
         <h3>Preparation time</h3>
@@ -68,7 +76,7 @@
 
       <div class="nutrition-container">
         <h2>Nutrition</h2>
-        <p>
+        <p class="nutrition-container__description">
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
@@ -106,15 +114,6 @@
             </div>
             <div class="table-right">
               <p>22g</p>
-            </div>
-          </div>
-
-          <div class="table-row">
-            <div class="table-left">
-              <p>Calories</p>
-            </div>
-            <div class="table-right">
-              <p>277kcal</p>
             </div>
           </div>
         </div>

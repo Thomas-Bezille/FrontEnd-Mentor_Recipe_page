@@ -1,0 +1,26 @@
+@media screen and (max-width: 720px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  .time-container,
+  .ingredients-container,
+  .instructions-container,
+  .nutrition-container,
+  .main-description,
+  h1 {
+    margin: 0 2rem;
+  }
+
+  .time-container,
+  .main-description,
+  h1 {
+    margin-top: 2rem;
+  }
+}
