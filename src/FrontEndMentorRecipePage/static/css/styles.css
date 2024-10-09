@@ -57,7 +57,6 @@ ul li::before {
   color: hsl(30, 10%, 34%);
   display: inline-block;
   width: 1em;
-  margin-right: 0.8rem;
   font-size: 1.5rem;
 }
 
@@ -102,4 +101,26 @@ img {
 
 .ingredients-container ul li::before {
   color: hsl(14, 45%, 36%);
+}
+
+/* INSTRUCTIONS CONTAINER */
+
+.instructions-container {
+  line-height: 2rem;
+}
+
+.instructions-container ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+
+.instructions-container ol li span,
+.instructions-container ol li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.instructions-container ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
 }
