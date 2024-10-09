@@ -52,6 +52,20 @@ main {
   border-radius: 2rem;
 }
 
+ul li::before {
+  content: "•";
+  color: hsl(30, 10%, 34%);
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+}
+
+ul li span,
+ol li span {
+  font-weight: 700;
+}
+
 /* IMAGE */
 
 img {
@@ -66,23 +80,26 @@ img {
 .time-container {
   background-color: hsl(330, 100%, 98%);
   margin-top: 2rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   padding: 1rem 2.5rem;
   border-radius: 1.5rem;
 }
 
 .time-container h3 {
   font-size: 1.3rem;
+  margin-bottom: 0.6rem;
 }
 
 .time-container ul li::before {
-  content: "•";
-  color: hsl(30, 10%, 34%);
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.8rem;
+  color: hsl(332, 51%, 32%);
 }
 
-.time-container ul li span {
-  font-weight: 700;
+/* INGREDIENTS CONTAINER */
+
+.ingredients-container {
+  line-height: 2rem;
+}
+
+.ingredients-container ul li::before {
+  color: hsl(14, 45%, 36%);
 }
